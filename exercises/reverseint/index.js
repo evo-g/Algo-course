@@ -8,6 +8,33 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+// var n = 51
 
-module.exports = reverseInt;
+function reverseInt(n) {
+    let revNum= parseInt(n.toString().split('').reverse().join('')); 
+    return revNum * Math.sign(n); 
+ }
+ 
+ // console.log(reverseInt(n))
+ 
+ 
+ 
+ module.exports = reverseInt;
+ 
+ //otpion 1 if statement
+ 
+ // function reverseInt(n) {
+ //     let revNum= parseInt(n.toString().split('').reverse().join('')); 
+ //     if (n < 0) {
+ //         return revNum * -1;
+ //     }
+ //     return revNum; 
+ //  }
+ 
+ //option 2 Math.sign()
+ 
+ // function reverseInt(n) {
+ //     let revNum= parseInt(n.toString().split('').reverse().join('')); 
+ //     return revNum * Math.sign(n); 
+ //  }
+  
